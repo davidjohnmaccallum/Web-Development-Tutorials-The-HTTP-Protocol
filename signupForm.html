@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Signup Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Titillium Web', sans-serif;
+            }
+            .centered-text {
+                text-align: center;
+            }
+            form {
+                border: 1px solid gray;
+                padding: 1em;
+                width: 30em;
+                margin: auto;                
+            }
+            form label {
+                width: 12em;
+                display: inline-block;    
+                text-align: right;
+                padding-right: 1em;
+            }
+            form input[type=text] {
+                width: 22em;                
+            }
+            .button-bar {
+                text-align: center;
+            }
+            form input[type=submit] {
+                margin: 1em 0 0 0;
+                height: 5em;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="centered-text">Signup Form</h1>
+
+        <form method="POST" action="./signupFormHandler.php">
+            
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" value="David"/>
+            </div>
+            
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" value="Mac"/>
+            </div>
+            
+            <div>
+                <label for="emailAddress">Email address</label>
+                <input type="text" name="emailAddress" value="082"/>
+            </div>
+            
+            <div class="button-bar">
+                <input type="submit" value="Sign me up!"/>
+            </div>
+            
+        </form>
+    </body>
+</html>
